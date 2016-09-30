@@ -64,8 +64,6 @@ public class DBHelp extends SQLiteOpenHelper {
         res.moveToFirst();
         do{
             ContentValues c = new ContentValues();
-            String s ="city is"+res.getString(0);
-            Log.d("ch",s);
             c.put(this.address,"Place"+i+"");
             c.put(this.lat, res.getString(1));
             c.put(this.lon, res.getString(2));
@@ -83,7 +81,6 @@ public class DBHelp extends SQLiteOpenHelper {
         Cursor res= db.rawQuery("Select * from " + tableName, null);
         int count= res.getCount();
         res.moveToFirst();
-        String s;
         while(count!=0){
             String address=res.getString(0);
             String lat=res.getString(1);
