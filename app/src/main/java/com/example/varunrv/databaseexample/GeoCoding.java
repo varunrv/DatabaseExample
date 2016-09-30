@@ -1,4 +1,4 @@
-package com.example.varunrv.databaseexample;
+/*package com.example.varunrv.databaseexample;
 
 import android.content.Context;
 import android.location.Address;
@@ -10,13 +10,13 @@ import java.util.Locale;
 
 /**
  * Created by vvadiraj on 9/15/2016.
- */
+
 public class GeoCoding {
     public static String getCompleteAddressString(double LATITUDE, double LONGITUDE, Context context) {
         String strAdd = "";
         Geocoder geocoder = new Geocoder(context, Locale.getDefault());
         try {
-            List<Address> addresses = geocoder.getFromLocation(LATITUDE, LONGITUDE, 1);
+            List<Address> addresses = geocoder.getFromLocation(LATITUDE, LONGITUDE, 2);
             if (addresses != null) {
                 Address returnedAddress = addresses.get(0);
                 StringBuilder strReturnedAddress = new StringBuilder("");
@@ -40,3 +40,4 @@ public class GeoCoding {
 
 
 }
+*/
